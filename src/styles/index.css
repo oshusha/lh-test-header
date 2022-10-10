@@ -1,0 +1,252 @@
+:root {
+  --background-color: #FFFFFF;
+  --dark-color: #252525;
+  --grey-color: #D7D7D7;
+  --grey-second-color: #E2E2E2;
+  --light-color: #FFFFFF;
+  --yellow-color: #FFCC00;
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-color);
+}
+
+.page {
+  background-color: var(--background-color);
+  font-size: 12px;
+}
+
+.container {
+  width: 1144px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 58px;
+  padding-right: 58px;
+}
+
+.header__wrapper {
+  display: flex;
+  padding-top: 16px;
+}
+
+.header__logo-link {
+
+}
+
+.header__logo {
+  width: 210px;
+  min-height: 184px;
+  display: block;
+  pointer-events: none;
+}
+
+.header__right {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--grey-color);
+}
+
+.header__nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav-item {
+  list-style: none;
+}
+
+.header__nav-item:not(:first-child) {
+  margin-left: 23px;
+}
+
+.header__nav-link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.header__auth-item {
+  list-style: none;
+}
+
+.header__auth-item:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid var(--dark-color);
+}
+
+.header__auth-item:not(:last-child) {
+  margin-right: 14px;
+}
+
+.header__auth-link {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.header__info {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--grey-second-color);
+  margin-top: 22px;
+}
+
+.header__shop-menu {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: var(--light-color);
+  padding: 0 0 0 30px;
+}
+
+.header__shop-menu-item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__shop-menu-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.header__shop-menu-icon {
+  width: 19px;
+  height: 19px;
+  margin-right: 11px;
+}
+
+.header__shop-menu-link {
+  text-decoration: underline;
+  color: var(--dark-color);
+}
+
+.header__shop-menu-link--cart {
+  font-size: 14px;
+}
+
+.header__shop-items {
+  display: flex;
+  padding: 0 0 0 35px;
+  background-color: var(--light-color);
+}
+
+.header__shop-item {
+  width: 70px;
+  height: 70px;
+}
+
+.header__shop-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.header__shop-contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 22px;
+  background-color: var(--light-color);
+}
+
+.header__shop-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__shop-time-text {
+  font-weight: 700;
+}
+
+.header__shop-phone {
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.header__shop-city {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+}
+
+.header__shop-city-wrap {
+  display: flex;
+  align-content: center;
+}
+
+.header__shop-city-icon {
+  margin-right: 4px;
+}
+
+.header__shop-city-link {
+  color: var(--dark-color);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--dark-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  border-radius: 20px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.menu__search {
+  background-color: var(--yellow-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 7px 4px 8px;
+}
+
+.menu__nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__nav-item {
+  padding: 9px 19px;
+  list-style: none;
+}
+
+.menu__nav-link {
+  color: var(--light-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu__nav-item--active {
+  background-color: var(--yellow-color);
+}
+
+.menu__nav-item--active .menu__nav-link {
+  color: var(--dark-color)
+}
+
+.menu__sale {
+  padding: 10px 15px 8px 14px;
+  background-color: var(--yellow-color);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu__sale-link {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
